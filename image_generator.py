@@ -15,7 +15,7 @@ if st.button("Generate Image", type="primary"):
     else:
         with st.spinner("Generating Image..."):
             try:
-                client = genai.Client(api_key="AIzaSyB1Bk1rBDni2UGQ9TGNZjkvvauCcBVTSuo")  
+                client = genai.Client(api_key="your_api_key")  
                 response = client.models.generate_content(
                     model="gemini-2.0-flash-preview-image-generation",
                     contents=contents,
